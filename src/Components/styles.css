@@ -1,0 +1,770 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.main {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: grid;
+  grid-template-columns: 0.8fr 3.6fr;
+  grid-template-rows: none;
+  height: 100vh;
+  overflow: auto;
+}
+
+.leftPanel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  position: sticky;
+  overflow-y: auto;
+  border: 1px solid #dbdbdb;
+}
+
+.instaLog {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 200px;
+  padding: 25px;
+}
+.Icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  color: black;
+  width: 300px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 5px;
+  height: 10px;
+}
+.Icons .Content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 5px;
+  width: 250px;
+}
+.Icons:hover {
+  background-color: #dbdbdb;
+  border-radius: 7px;
+  transition: 0.5s;
+}
+.btIcons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 42%;
+}
+.pfImg {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid grey;
+}
+.middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+}
+.scrollpost {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.controlStories {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+}
+.stories {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+
+  width: 640px;
+  height: 85px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.PrevButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #dbdbdb;
+  cursor: pointer;
+  color: #404344;
+  font-weight: bold;
+}
+.story {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.userstory {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(#ffc900, #e401a2);
+}
+.userstory img {
+  border-radius: 50%;
+  border: 2px solid white;
+}
+.NextButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #dbdbdb;
+  cursor: pointer;
+  color: #404344;
+  font-weight: bold;
+}
+.username {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 74px;
+  height: 16px;
+  font-size: 12px;
+}
+.post {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  padding: 20px;
+}
+.contentHeading {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 466px;
+  height: 32px;
+  gap: 20px;
+}
+.morediv {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 280px;
+}
+.morediv img {
+  cursor: pointer;
+}
+.pfphoto {
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  border: 2px solid rgb(210, 62, 13);
+  background: linear-gradient(#ffc900, #e401a2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pfphoto img {
+  border-radius: 50%;
+  cursor: pointer;
+}
+.pfName {
+  font-family: Helvetica;
+  color: black;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+}
+.time {
+  color: #737373;
+  font-size: 14px;
+}
+.Contentbox {
+  display: flex;
+  width: 468px;
+  height: 585px;
+  border: 1px solid rgb(225, 222, 222);
+  border-radius: 2px;
+  margin-top: 15px;
+}
+.reactions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 466px;
+  height: 32px;
+  gap: 10px;
+  padding-top: 10px;
+  cursor: pointer;
+}
+.likes {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 466px;
+}
+
+.save {
+  display: flex;
+  width: 380px;
+  align-items: center;
+  justify-content: flex-end;
+}
+.rightPanel {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  overflow-y: auto;
+  height: 100%;
+  width: 420px;
+  margin-top: 20px;
+}
+.accountDetails {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 287px;
+  height: 44px;
+  margin-top: 20px;
+}
+.people {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.pfImg1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid #737373;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.pfName1 {
+  font-family: Helvetica;
+  color: black;
+  font-weight: 600;
+  font-size: 14px;
+
+  width: 180px;
+  height: 18px;
+}
+.follow {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 14px;
+  font-weight: 600;
+  color: #199ff7;
+  cursor: pointer;
+}
+.suggestions {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: flex-start;
+  width: 319px;
+  height: 340px;
+  margin-top: 20px;
+}
+.suggestedHeading {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.suggestedHeading p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #737373;
+  width: 250px;
+}
+.suggestedHeading span {
+  font-size: 12px;
+  font-weight: 600;
+  color: black;
+}
+.suggestedPeople {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+  width: 315px;
+  height: 316px;
+  margin-top: 10px;
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 12px;
+  line-height: 14px;
+  word-spacing: 5px;
+  color: #c7c7c7;
+}
+
+/* Modal Story viewer */
+.StoryView {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.ModalSlide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+.closebutton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+}
+.sliderBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.slider {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.slide {
+  height: 60vh;
+  font-size: 50px;
+}
+
+.slide img {
+  object-fit: contain;
+}
+
+.left-arrow,
+.right-arrow {
+  position: absolute;
+  z-index: 1;
+  font-size: 20px;
+  top: 46%;
+  color: white;
+  background: black;
+  border-radius: 9999px;
+  padding: 4px 8px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.left-arrow {
+  left: 5%;
+}
+
+.right-arrow {
+  right: 5%;
+}
+
+/* explore  */
+.all {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  width: 100%;
+}
+.leftPanelOverlap {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 590px;
+  height: 100vh;
+}
+.imageCollage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  overflow-y: scroll;
+  height: 100vh;
+  width: 100%;
+  margin-top: 10px;
+}
+.imgContainer1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+}
+.imgLayer {
+  width: 320px;
+  height: 330px;
+  cursor: pointer;
+  opacity: 0.8;
+}
+.imgLayer:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  transition: 0.3s ease-in-out;
+  opacity: 1.1;
+}
+.imgLayerBig {
+  width: 320px;
+  height: 655px;
+  cursor: pointer;
+  opacity: 0.8;
+}
+.imgLayerBig:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  transition: 0.3s ease-in-out;
+  opacity: 1.1;
+}
+.imgContainerBig {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+}
+
+/* Profile */
+.Pmain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+}
+.PField {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.PfPhotoCover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 292px;
+  height: 150px;
+}
+.PfPhoto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  height: 140px;
+  border: 1px solid grey;
+  border-radius: 50%;
+}
+.PfAllDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 20px;
+}
+.PfAcces {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.Pusername {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.Pusername p {
+  font-size: 20px;
+  font-weight: 400;
+  color: black;
+}
+.PfAcces button {
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+  background-color: #efefef;
+}
+.PfDetails {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  font-size: 16px;
+  color: black;
+  gap: 20px;
+  cursor: pointer;
+}
+.settingIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.favStories {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 935px;
+  height: 130px;
+  cursor: pointer;
+}
+.favStoryWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.favStoryWrap p {
+  font-size: 16px;
+  font-weight: 600;
+}
+.favStory {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 87px;
+  height: 87px;
+  border: 1px solid #c7c7c7;
+  border-radius: 50%;
+}
+.Pnav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 945px;
+}
+.Pline {
+  display: flex;
+  width: 100%;
+  height: 1px;
+  border: 1px solid grey;
+}
+.Phead {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 70px;
+  cursor: pointer;
+  height: 60px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.ShowPostSave {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  /* overflow-y: scroll; */
+  height: 100vh;
+  width: 935px;
+}
+.OwnPosts {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.SavedPosts {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+.TaggedPosts {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+.OwnPost {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 309px;
+  height: 309px;
+}
+
+.footerContent {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 400px;
+}
+.footerContent p {
+  color: #737373;
+  font-size: 12px;
+  word-spacing: 15px;
+  text-align: center;
+  margin-top: 10px;
+}
+.footerContent .cpyright {
+  word-spacing: 0px;
+}
+
+/* Create  */
+.ModalCreate {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+.CreateContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 712px;
+  width: 668px;
+  background-color: #fff;
+  border-radius: 15px;
+}
+.CreateHeading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 42px;
+}
+.CreateHeading .h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+}
+.CreateIcons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  height: 600px;
+  width: 100%;
+}
+.CreateIcons input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.CreateIcons input::-webkit-file-upload-button {
+  display: none;
+}
+.CreateIcons input::file-selector-button {
+  display: none;
+}
+.CreateContent {
+  text-align: center;
+  font-size: 20px;
+  padding: 7px;
+}
+.CreateLine {
+  width: 100%;
+  height: 0.5px;
+  border: 0.5px solid #dbdbdb;
+}
+.SelectImg {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #0095f6;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  width: 186px;
+  height: 32px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.CreateImgPost {
+  position: relative;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.sharePost {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: 360px;
+}
+.sharePost p {
+  font-size: 16px;
+  font-weight: 600;
+  color: #0095f6;
+  cursor: pointer;
+}

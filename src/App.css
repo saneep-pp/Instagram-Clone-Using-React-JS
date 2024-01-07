@@ -1,0 +1,170 @@
+#root {
+  margin: 0;
+  width: 100%;
+  font-family: apple-system BlinkMacSystemFont "Segoe UI" Roboto Helvetica Arial
+    sans-serif;
+}
+.main1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 350px;
+  border: 0.5px solid #dbdbdb;
+  height: 402px;
+}
+.box1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 350px;
+  border: 0.5px solid #dbdbdb;
+  height: 606px;
+}
+.fbbutton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.fbbutton button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #0095f6;
+  width: 268px;
+  height: 34px;
+}
+.content {
+  font-size: 12px;
+  text-align: center;
+  color: #808280;
+  padding: 0;
+  margin: 0;
+}
+.blcontent {
+  color: #39479f;
+  cursor: pointer;
+}
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+.inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.inputs input {
+  width: 260px;
+  height: 38px;
+  border: 0.5px solid #dbdbdb;
+  border-radius: 3px;
+  padding: 0 7px;
+  background-color: #fafafa;
+}
+.login {
+  background-color: #15a1ff;
+  width: 279px;
+  height: 38px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  opacity: 0.6;
+}
+.login:hover {
+  transition: 0.2s ease-in-out;
+  opacity: 1;
+}
+.signupb {
+  background-color: #4cb5f9;
+  width: 268px;
+  height: 32px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+.lines {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 50px;
+}
+.line {
+  width: 100px;
+  border: 0.1px solid rgb(212, 209, 209);
+}
+.or {
+  line-height: 14;
+  font-weight: 600;
+  font-size: 13px;
+  color: #737373;
+}
+.loginFacebook {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-weight: 600;
+  color: #385185;
+  font-size: 14px;
+  cursor: pointer;
+}
+.forgotPass {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2156ae;
+  line-height: 14px;
+  font-weight: 400;
+  font-size: 12px;
+  cursor: pointer;
+}
+.box2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  border: 0.5px solid #dbdbdb;
+  height: 63px;
+  font-weight: 400;
+  line-height: 14;
+  font-size: 14px;
+}
+.signup {
+  font-weight: 600;
+  color: #4297f6;
+  cursor: pointer;
+}
+.apps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.apps img {
+  cursor: pointer;
+}
+.signtxt {
+  margin-top: -30px;
+  text-align: center;
+
+  color: #737373;
+  font-size: 16px;
+
+  font-weight: 600;
+}
